@@ -1,5 +1,3 @@
-# Predict-Football-Match-Winners
-
 # ⚽ Predict Football Match Winners
 
 This project builds a **machine learning model** to predict the outcome of football matches using historical match data. The dataset includes various statistics such as team performance, previous results, and other key match attributes.
