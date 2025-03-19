@@ -93,7 +93,3 @@ merged[(merged["prediction_x"] == 1) & (merged["prediction_y"] == 1)]["actual_x"
 This helped determine the true winner when both teams were expected to win.
 
 ---
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
-```
