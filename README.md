@@ -19,9 +19,9 @@ The dataset (`matches.csv`) consists of **English Premier League (EPL)** match d
 ## Data Preprocessing
 
 Since some teams **get relegated** each season, they are removed from the dataset. I also cleaned the data by:
-✅ Removing **duplicates**  
-✅ Converting categorical features into **integer values** for model training  
-✅ Filtering matches to **only include EPL games**  
+- Removing **duplicates**  
+- Converting categorical features into **integer values** for model training  
+- Filtering matches to **only include EPL games**  
 
 To improve accuracy, I introduced **rolling averages** for key performance metrics:
 
@@ -75,10 +75,10 @@ test = data[data["date"] > '2022-01-01']
 ---
 
 ## Future Improvements
-🔹 **Use more seasons**: Adding additional years of data will improve model accuracy.  
-🔹 **Incorporate more features**: Using advanced stats like player performance, injuries, and weather conditions.  
-🔹 **Try different ML models**: Exploring **XGBoost, Neural Networks, or Deep Learning** to identify non-linear trends.  
-🔹 **Expand beyond EPL**: Including data from **other leagues** for broader insights.
+ **Use more seasons**: Adding additional years of data will improve model accuracy.  
+ **Incorporate more features**: Using advanced stats like player performance, injuries, and weather conditions.  
+ **Try different ML models**: Exploring **XGBoost, Neural Networks, or Deep Learning** to identify non-linear trends.  
+ **Expand beyond EPL**: Including data from **other leagues** for broader insights.
 
 ---
 
