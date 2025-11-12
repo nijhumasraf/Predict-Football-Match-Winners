@@ -1,10 +1,10 @@
-# ⚽ Predict Football Match Winners using Machine Learning
+# Predict Football Match Winners using Machine Learning
 
 This project is designed to **predict football match outcomes** using **machine learning** based on historical match data. As a **football freak** who plays and watches the game daily, I wanted to build a model that could analyze past matches and provide predictions. The goal is to help **football enthusiasts** and **bettors** make informed decisions using data-driven insights.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The dataset (`matches.csv`) consists of **English Premier League (EPL)** match data, including key match statistics. The dataset originally contained **1,520** matches, but after filtering out relegated teams, it was reduced to **1,389** matches.
 
@@ -16,7 +16,7 @@ The dataset (`matches.csv`) consists of **English Premier League (EPL)** match d
 
 ---
 
-## 🛠️ Data Preprocessing
+## Data Preprocessing
 
 Since some teams **get relegated** each season, they are removed from the dataset. I also cleaned the data by:
 ✅ Removing **duplicates**  
@@ -41,7 +41,7 @@ This calculates the **rolling averages for the past 3 matches**, providing bette
 
 ---
 
-## 🤖 Machine Learning Model Used
+## Machine Learning Model Used
 
 I used a **Random Forest Classifier** as the main model. However, I plan to explore **other models** in the future for better accuracy.
 
@@ -64,7 +64,7 @@ test = data[data["date"] > '2022-01-01']
 
 ---
 
-## 📈 Features Used for Prediction
+## Features Used for Prediction
 - **Date** (match date)
 - **Venue** (home/away)
 - **Opponent**
@@ -74,7 +74,7 @@ test = data[data["date"] > '2022-01-01']
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 🔹 **Use more seasons**: Adding additional years of data will improve model accuracy.  
 🔹 **Incorporate more features**: Using advanced stats like player performance, injuries, and weather conditions.  
 🔹 **Try different ML models**: Exploring **XGBoost, Neural Networks, or Deep Learning** to identify non-linear trends.  
@@ -82,7 +82,7 @@ test = data[data["date"] > '2022-01-01']
 
 ---
 
-## 🏆 Challenges Faced
+## Challenges Faced
 1. **Data Cleaning**: Converting categorical data into numerical values was challenging.  
 2. **Feature Selection**: Finding the **most relevant** columns for predicting match outcomes required experimentation.  
 3. **Conflicting Predictions**: If **both teams were predicted to win**, I had to create logic for handling conflicts:
